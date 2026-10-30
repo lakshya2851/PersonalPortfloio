@@ -5,7 +5,6 @@ import {
   Command,
   List,
   X,
-  FileArrowDown,
   ArrowUpRight,
 } from "@phosphor-icons/react";
 import { personalInfo } from "../data/content";

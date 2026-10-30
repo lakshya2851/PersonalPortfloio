@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { AnimatePresence } from "motion/react";
 import { IntroBoot } from "./components/IntroBoot";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
@@ -16,6 +17,11 @@ export default function App() {
   const [bootComplete, setBootComplete] = useState(false);
   const [isDark, setIsDark] = useState(false);
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
+
+  const handleBootComplete = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    setBootComplete(true);
+  };
 
   // Initialize theme from system or saved preference
   useEffect(() => {
@@ -71,8 +77,10 @@ export default function App() {
       {/* Custom desktop cursor */}
       <CustomCursor />
 
-      {/* Boot typewriter terminal intro */}
-      {!bootComplete && <IntroBoot onComplete={() => setBootComplete(true)} />}
+      {/* Boot typewriter terminal intro — AnimatePresence enables the exit fade */}
+      <AnimatePresence>
+        {!bootComplete && <IntroBoot onComplete={handleBootComplete} />}
+      </AnimatePresence>
 
       {/* Command Palette */}
       <CommandPalette
@@ -82,8 +90,8 @@ export default function App() {
         onToggleTheme={toggleTheme}
       />
 
-      {/* Main Page Layout */}
-      <div className="flex flex-col min-h-screen">
+      {/* Main Page Layout — hidden until boot completes so it doesn't render behind the intro */}
+      <div className={`flex flex-col min-h-screen transition-opacity duration-300 ${bootComplete ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
         <Navbar
           isDark={isDark}
           onToggleTheme={toggleTheme}

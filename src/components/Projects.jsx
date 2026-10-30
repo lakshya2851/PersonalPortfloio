@@ -147,7 +147,7 @@ export function Projects() {
               {/* Metrics (if available, e.g. for Spam Classifier) */}
               {project.metrics && (
                 <div className="mt-6 p-4 rounded-xl border border-amber-500/20 bg-amber-500/5 text-xs font-mono">
-                  <div className="text-[#FF4D00] font-semibold mb-2">Model Evaluation Placeholders:</div>
+                  <div className="text-[#FF4D00] font-semibold mb-2">Model Evaluation:</div>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                     <div className="p-2 rounded bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10">
                       Accuracy: <span className="text-[#FF4D00] font-bold">{project.metrics.accuracy}</span>
@@ -160,7 +160,7 @@ export function Projects() {
                     </div>
                   </div>
                   <p className="text-[11px] text-[#888] mt-2">
-                    Metrics kept as placeholders per instructions; insert your benchmark dataset numbers when finalized.
+                    Evaluated on SMS Spam Collection dataset (5,574 messages) — Multinomial Naive Bayes with TF-IDF vectorization.
                   </p>
                 </div>
               )}

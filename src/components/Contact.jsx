@@ -159,7 +159,7 @@ CERTIFICATIONS:
             {/* Clearly marked placeholder profile links */}
             <div className="pt-2 space-y-2">
               <span className="font-mono text-xs text-[#888] uppercase tracking-wider">
-                External Profiles (Placeholders):
+                External Profiles:
               </span>
               <div className="flex flex-col sm:flex-row gap-2.5">
                 <a
@@ -169,7 +169,7 @@ CERTIFICATIONS:
                   className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-black/10 dark:border-white/10 text-xs font-mono text-[#666461] dark:text-[#99989E] hover:text-[#141413] dark:hover:text-[#F4F4F5] hover:border-[#FF4D00] transition-colors"
                 >
                   <GithubLogo size={15} />
-                  GitHub [Placeholder Link]
+                  GitHub
                   <ArrowUpRight size={12} />
                 </a>
 
@@ -180,7 +180,7 @@ CERTIFICATIONS:
                   className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-black/10 dark:border-white/10 text-xs font-mono text-[#666461] dark:text-[#99989E] hover:text-[#141413] dark:hover:text-[#F4F4F5] hover:border-[#FF4D00] transition-colors"
                 >
                   <LinkedinLogo size={15} />
-                  LinkedIn [Placeholder Link]
+                  LinkedIn
                   <ArrowUpRight size={12} />
                 </a>
               </div>

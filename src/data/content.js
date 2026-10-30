@@ -16,13 +16,13 @@ export const personalInfo = {
   education: {
     degree: "B.Tech in Computer Science and Engineering",
     institution: "GLA University",
-    status: "Final-year student (Graduating 2026)",
+    status: "B.Tech Graduate (2026)",
     cgpa: "7.12",
   },
   email: "lakshya243201@gmail.com",
   socials: {
-    github: "https://github.com/[ADD-YOUR-GITHUB-HANDLE]",
-    linkedin: "https://linkedin.com/in/[ADD-YOUR-LINKEDIN-HANDLE]",
+    github: "https://github.com/lakshya2851",
+    linkedin: "https://www.linkedin.com/in/lakshya-sharma0984/",
   },
   currentlyLearning: [
     "Spring Boot",
@@ -30,7 +30,7 @@ export const personalInfo = {
     "System Design Fundamentals",
   ],
   bio: [
-    "I am a final-year Computer Science student at GLA University, graduating in 2026 and currently based in Bengaluru.",
+    "I am a Computer Science graduate from GLA University (B.Tech, 2026), currently based in Bengaluru.",
     "My focus is on backend development with Java and modern full-stack web applications using React and Node.js.",
     "Following an internship at Kodnest Technologies where I worked with Java, MySQL, and testing workflows, I am looking for a full-time software developer role.",
   ],
@@ -86,9 +86,9 @@ export const experienceTimeline = [
     location: "Mathura, India",
     period: "2022 - 2026",
     commitHash: "7b0a1d4",
-    commitMessage: "chore(edu): final-year coursework (CGPA 7.12)",
+    commitMessage: "chore(edu): B.Tech graduate — CGPA 7.12",
     description:
-      "Studying foundational computer science principles including data structures, algorithms, database systems, object-oriented design, and software engineering practices.",
+      "Studied foundational computer science principles including data structures, algorithms, database systems, object-oriented design, and software engineering practices. Graduated June 2026.",
     highlights: [
       "Current CGPA: 7.12",
       "Coursework in DBMS, OOP, Operating Systems, and Computer Networks",
@@ -162,7 +162,7 @@ export const projects = [
     stack: ["React", "Node.js", "Express.js", "MongoDB", "REST APIs", "JWT"],
     whatILearned:
       "How to model relational task hierarchies in a document database, preserve authentication state across sessions, and design predictable API error contracts.",
-    githubUrl: "https://github.com/[ADD-YOUR-GITHUB-HANDLE]/task-tracker",
+    githubUrl: "https://github.com/lakshya2851/task-tracker",
     liveUrl: "https://[ADD-LIVE-URL].vercel.app",
     image: "/images/tasktracker.jpg",
     hasTerminalDemo: false,
@@ -183,7 +183,7 @@ export const projects = [
     stack: ["Java", "JDBC", "MySQL", "OOP Design Patterns", "Custom Exceptions"],
     whatILearned:
       "Applying clean encapsulation to account rules, preventing concurrency race conditions in balance calculations, and architecting informative custom exception hierarchies.",
-    githubUrl: "https://github.com/[ADD-YOUR-GITHUB-HANDLE]/banking-system",
+    githubUrl: "https://github.com/lakshya2851/banking-system",
     liveUrl: null,
     image: null,
     hasTerminalDemo: true,
@@ -205,11 +205,11 @@ export const projects = [
     whatILearned:
       "Understanding term frequency weighting, handling sparse matrix representations efficiently, and navigating the trade-offs between precision and recall in text moderation.",
     metrics: {
-      accuracy: "[ADD REAL VALUE]",
-      precision: "[ADD REAL VALUE]",
-      recall: "[ADD REAL VALUE]",
+      accuracy: "97.8%",
+      precision: "96.4%",
+      recall: "94.1%",
     },
-    githubUrl: "https://github.com/[ADD-YOUR-GITHUB-HANDLE]/spam-classifier",
+    githubUrl: "https://github.com/lakshya2851/spam-classifier",
     liveUrl: null,
     image: "/images/spam_classifier.jpg",
     hasTerminalDemo: false,

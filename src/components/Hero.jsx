@@ -32,7 +32,7 @@ export function Hero() {
 
             {/* 3. Subtext (strictly <= 20 words) */}
             <p className="text-base sm:text-lg text-[#666461] dark:text-[#99989E] leading-relaxed max-w-xl font-normal">
-              Final-year CSE student in Bengaluru focusing on Java enterprise patterns and React full-stack applications.
+              CSE Graduate (2026) based in Bengaluru, focusing on Java enterprise patterns and React full-stack applications.
             </p>
 
             {/* 4. CTAs (1 primary + 1 secondary) */}

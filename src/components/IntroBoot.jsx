@@ -7,6 +7,14 @@ export function IntroBoot({ onComplete }) {
   const [isTypingDone, setIsTypingDone] = useState(false);
   const fullText = "hello, I'm Lakshya.";
 
+  // Lock body scroll while intro is visible so background page can't shift
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   useEffect(() => {
     // Check if session has already seen intro
     const hasSeenIntro = sessionStorage.getItem("portfolio_intro_seen");
@@ -23,10 +31,11 @@ export function IntroBoot({ onComplete }) {
       } else {
         clearInterval(interval);
         setIsTypingDone(true);
+        // Hold on the completed name for 1800ms before dismissing
         setTimeout(() => {
           sessionStorage.setItem("portfolio_intro_seen", "true");
           onComplete();
-        }, 800);
+        }, 1800);
       }
     }, 70);
 

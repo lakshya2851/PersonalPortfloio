@@ -65,14 +65,14 @@ export function CommandPalette({ isOpen, onClose, isDark, onToggleTheme }) {
     },
     {
       id: "github",
-      label: "Open GitHub Profile [Placeholder]",
+      label: "Open GitHub Profile",
       group: "External Links",
       icon: <GithubLogo size={16} />,
       action: () => window.open(personalInfo.socials.github, "_blank"),
     },
     {
       id: "linkedin",
-      label: "Open LinkedIn Profile [Placeholder]",
+      label: "Open LinkedIn Profile",
       group: "External Links",
       icon: <LinkedinLogo size={16} />,
       action: () => window.open(personalInfo.socials.linkedin, "_blank"),
